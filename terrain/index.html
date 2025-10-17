@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pokemon Crimson</title>
+    </head>
+    <body>
+        <game>
+            Sorry! Your Javascript is not enabled. Enable Javascript to play Pokemon Crimson.
+        </game>
+    </body>
+</html>
+<script src="Tilemap.js"></script>
+<script>
+    var field = `
+giigggggggggggggggggggggggggggggggggiig
+iiiigggggggggghhhhhhgggggggggggggggiiii
+iiiighggghgghhhiiiiiiihhgggggggggggiiii
+giiggggggggggggghhhhhhhiiiiiiihgggggiig
+ghhhhhhhggggggggggggggggggggggggggggggg
+ghhhhhhhhhgggggggggggggggggggghhhhhhhhg
+ghhhhhhgggggggggggggggggggggggghhhhhhhg
+gggggggggggggggggggggggghhhgggggggggggg
+ggggggggggggggggggggggggggggggggggggggg
+gggggiiiiiiigggghhhhggiiiihhgghgggggggg
+ggggggghhhgggghhhiihhiigghhgggggggghhhg
+ghhggiiiiihiiijjjiiggggghhgggggggggghhg
+ggghhhhiiihhiijjjgghhiiihhhhgggggghhhhg
+ghhiiiihihgggiiiiiiihhhiihghggggggghhhg
+ggiiiiiihhhhhhhhhhgiigggggggggggghhhggg
+gggiiiiiiiiiiiiiihhhiiggggggiiiiggggggg
+ggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggg
+giigggggghhgggggggghhhhhggggggggggggiig
+iiiiggggghhhggggggiiiihhgggggggggggiiii
+iiiigghggghhhggghhhhhiiiiihhgggggggiiii
+giiggggggggghhhhhgggggggggggggggggggiig`
+    var canvas = document.querySelector("game");
+    const d = new Tilemap(canvas, field, 15, 15);
+    d.start();
+    d.draw();
+    d.control();
+</script>
+<!-- cache manager here -->
