@@ -55,7 +55,10 @@ body {
 #screen {
     position: fixed;
     z-index: 999;
-    background: url('Alien_Screen.png');
+    background-image: url('Alien_Screen.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
 }
 #description {
     width: 30%;
