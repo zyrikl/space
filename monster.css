@@ -56,7 +56,6 @@ body {
     position: fixed;
     z-index: 999;
     padding: 20px;
-    border: 1px solid yellow;
     background-image: url('Alien_Screen.png');
     background-repeat: no-repeat;
     background-position: center center;
